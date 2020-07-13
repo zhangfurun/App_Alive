@@ -16,6 +16,8 @@
 		15A5A8A924BC6304008FEF72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5A8A824BC6304008FEF72 /* main.m */; };
 		15A5A8B324BC6304008FEF72 /* App_AliveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5A8B224BC6304008FEF72 /* App_AliveTests.m */; };
 		15A5A8BE24BC6304008FEF72 /* App_AliveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5A8BD24BC6304008FEF72 /* App_AliveUITests.m */; };
+		15A5A8CE24BC63E3008FEF72 /* TT_bgAliveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A5A8CD24BC63E3008FEF72 /* TT_bgAliveTool.m */; };
+		15A5A8D024BC6B2A008FEF72 /* Silence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15A5A8CF24BC6B29008FEF72 /* Silence.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		15A5A8B924BC6304008FEF72 /* App_AliveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App_AliveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A5A8BD24BC6304008FEF72 /* App_AliveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App_AliveUITests.m; sourceTree = "<group>"; };
 		15A5A8BF24BC6304008FEF72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15A5A8CC24BC63E3008FEF72 /* TT_bgAliveTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TT_bgAliveTool.h; sourceTree = "<group>"; };
+		15A5A8CD24BC63E3008FEF72 /* TT_bgAliveTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TT_bgAliveTool.m; sourceTree = "<group>"; };
+		15A5A8CF24BC6B29008FEF72 /* Silence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Silence.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,7 @@
 		15A5A89524BC6302008FEF72 /* App_Alive */ = {
 			isa = PBXGroup;
 			children = (
+				15A5A8CB24BC63C3008FEF72 /* BG_AliveTool */,
 				15A5A89624BC6302008FEF72 /* AppDelegate.h */,
 				15A5A89724BC6302008FEF72 /* AppDelegate.m */,
 				15A5A89924BC6302008FEF72 /* SceneDelegate.h */,
@@ -135,6 +141,16 @@
 				15A5A8BF24BC6304008FEF72 /* Info.plist */,
 			);
 			path = App_AliveUITests;
+			sourceTree = "<group>";
+		};
+		15A5A8CB24BC63C3008FEF72 /* BG_AliveTool */ = {
+			isa = PBXGroup;
+			children = (
+				15A5A8CF24BC6B29008FEF72 /* Silence.wav */,
+				15A5A8CC24BC63E3008FEF72 /* TT_bgAliveTool.h */,
+				15A5A8CD24BC63E3008FEF72 /* TT_bgAliveTool.m */,
+			);
+			path = BG_AliveTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +258,7 @@
 			files = (
 				15A5A8A624BC6304008FEF72 /* LaunchScreen.storyboard in Resources */,
 				15A5A8A324BC6304008FEF72 /* Assets.xcassets in Resources */,
+				15A5A8D024BC6B2A008FEF72 /* Silence.wav in Resources */,
 				15A5A8A124BC6302008FEF72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +286,7 @@
 			files = (
 				15A5A89E24BC6302008FEF72 /* ViewController.m in Sources */,
 				15A5A89824BC6302008FEF72 /* AppDelegate.m in Sources */,
+				15A5A8CE24BC63E3008FEF72 /* TT_bgAliveTool.m in Sources */,
 				15A5A8A924BC6304008FEF72 /* main.m in Sources */,
 				15A5A89B24BC6302008FEF72 /* SceneDelegate.m in Sources */,
 			);
@@ -446,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangfurun.App-Alive";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangfurun.background-alive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangfurun.App-Alive";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangfurun.background-alive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

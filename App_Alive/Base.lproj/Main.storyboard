@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,58 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pL-D5-2gz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P60-3v-g06">
+                                <rect key="frame" x="0.0" y="589.5" width="414" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBu-qW-11g">
+                                <rect key="frame" x="0.0" y="316.5" width="414" height="273"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P60-3v-g06" firstAttribute="width" secondItem="5pL-D5-2gz" secondAttribute="width" id="6Hd-yw-Jgc"/>
+                            <constraint firstItem="5pL-D5-2gz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6iC-Go-iEn"/>
+                            <constraint firstItem="qBu-qW-11g" firstAttribute="width" secondItem="5pL-D5-2gz" secondAttribute="width" id="7vt-yt-I50"/>
+                            <constraint firstItem="5pL-D5-2gz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Exz-Cp-Y8P"/>
+                            <constraint firstItem="5pL-D5-2gz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QPl-KY-b1E"/>
+                            <constraint firstItem="P60-3v-g06" firstAttribute="height" secondItem="5pL-D5-2gz" secondAttribute="height" id="U7M-NL-yD2"/>
+                            <constraint firstItem="qBu-qW-11g" firstAttribute="top" secondItem="5pL-D5-2gz" secondAttribute="bottom" id="cmv-PZ-FAp"/>
+                            <constraint firstItem="P60-3v-g06" firstAttribute="leading" secondItem="5pL-D5-2gz" secondAttribute="leading" id="jhg-yt-4Fk"/>
+                            <constraint firstItem="qBu-qW-11g" firstAttribute="leading" secondItem="5pL-D5-2gz" secondAttribute="leading" id="ni1-bf-mdD"/>
+                            <constraint firstItem="qBu-qW-11g" firstAttribute="height" secondItem="5pL-D5-2gz" secondAttribute="height" id="uQp-3o-Da3"/>
+                            <constraint firstItem="qBu-qW-11g" firstAttribute="centerX" secondItem="5pL-D5-2gz" secondAttribute="centerX" id="ujC-5E-a1F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P60-3v-g06" secondAttribute="bottom" id="vYp-rj-KuI"/>
+                            <constraint firstItem="P60-3v-g06" firstAttribute="centerX" secondItem="5pL-D5-2gz" secondAttribute="centerX" id="vv9-bE-W91"/>
+                            <constraint firstItem="P60-3v-g06" firstAttribute="top" secondItem="qBu-qW-11g" secondAttribute="bottom" id="wVE-3Q-vtF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currTimeLabel" destination="qBu-qW-11g" id="v8c-cF-S7K"/>
+                        <outlet property="lasTimeLabel" destination="P60-3v-g06" id="w6d-p5-hiX"/>
+                        <outlet property="maxTimeLabel" destination="5pL-D5-2gz" id="egK-JT-Kha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
         </scene>
     </scenes>
 </document>
